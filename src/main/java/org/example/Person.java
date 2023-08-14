@@ -2,35 +2,40 @@ package org.example;
 
 public class Person {
     private int id;
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
+
+
+
     private String email;
 
     public Person() {
         this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
+        setFirstname(firstName);
+        setLastname(lastName);
+        setEmail(email);
+
+
     }
     public int getId() {
         return id;
     }
     public String getFirstname() {
-        return firstname;
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        if (firstname == null) throw new IllegalArgumentException("FirstName cannot be null");
-        this.firstname = firstname;
+    public void setFirstname(String firstName) {
+        if (firstName == null) throw new IllegalArgumentException("FirstName cannot be null");
+        this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        if (lastname == null) throw new IllegalArgumentException("LastName cannot be null");
-        this.lastname = lastname;
+    public void setLastname(String lastName) {
+        if (lastName == null) throw new IllegalArgumentException("LastName cannot be null");
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -42,10 +47,22 @@ public class Person {
         this.email = email;
     }
 
-    public String getSummary(int id, String firstname,String lastname, String email)
-    {
-        return "Person{ Id=" + id + ", firstName='" + firstname + ", lastName='" + lastname + '}';
+    public String getSummary(){
+        return this.toString();
     }
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+
+
+
 
 
 }
