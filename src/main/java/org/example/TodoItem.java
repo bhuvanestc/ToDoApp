@@ -6,16 +6,14 @@ public class TodoItem {
     private int id;
     public String title;
     public String taskDescription;
-
-
-
     public LocalDate deadLine;
     public Boolean done;
     public Person creator;
 
 
 
-    public TodoItem() {
+
+    public TodoItem( int id,String title, String taskDescription, LocalDate deadLine,Boolean done) {
         this.id = id;
         this.title = title;
         this.taskDescription = taskDescription;
@@ -32,6 +30,7 @@ public class TodoItem {
     }
 
     public void setTitle(String title) {
+        if (title == null) throw new IllegalArgumentException("Title cannot be null");
         this.title = title;
     }
 
@@ -48,6 +47,8 @@ public class TodoItem {
     }
 
     public void setDeadLine(LocalDate deadLine) {
+
+        if (deadLine == null) throw new IllegalArgumentException("Deadline cannot be null");
         this.deadLine = deadLine;
     }
 
@@ -67,7 +68,7 @@ public class TodoItem {
         this.creator = creator;
     }
     public Boolean isOverdue() {
-        return true;
+        return LocalDate.now().isAfter(this.deadLine);
     }
 
     public String getSummary()
