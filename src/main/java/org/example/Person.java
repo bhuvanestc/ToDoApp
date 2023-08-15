@@ -1,15 +1,15 @@
 package org.example;
+import java.util.Objects;
 
 public class Person {
+
+
     private int id;
     private String firstName;
     private String lastName;
-
-
-
     private String email;
 
-    public Person() {
+    public Person(int id ,String firstName, String lastName,String email) {
         this.id = id;
         setFirstname(firstName);
         setLastname(lastName);
@@ -29,7 +29,7 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    public String getLastname() {
         return lastName;
     }
 
@@ -48,7 +48,9 @@ public class Person {
     }
 
     public String getSummary(){
-        return this.toString();
+        System.out.println(this.toString());
+        return  this.toString();
+
     }
     @Override
     public String toString() {
