@@ -9,10 +9,12 @@ public class TodoItemTask {
     public TodoItemTask(int id, Boolean assigned, TodoItem todoItem, Person assignee) {
         this.id = id;
         this.assigned = assigned;
-        this.todoItem = todoItem;
-        this.assignee = assignee;
+        setTodoItem(todoItem);
+        setAssignee(assignee);
 
     }
+
+
 
     public int getId() {
         return id;
@@ -31,15 +33,15 @@ public class TodoItemTask {
     }
 
     public void setTodoItem(TodoItem todoItem) {
+        if (todoItem == null) throw new IllegalArgumentException("Todoitem cannot be null");
         this.todoItem = todoItem;
     }
     public Person getAssignee() {
         return assignee;
     }
 
-    public void setAssignee(Person assignee)
-    {
-        this.assignee = assignee;
+    public void setAssignee(Person assignee){
+    this.assignee = assignee;
     }
 
     public String getSummary(){

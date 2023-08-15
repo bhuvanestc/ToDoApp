@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18697f71-53f6-4301-abd8-eeb39da29cea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TodoItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TodoItemTaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TodoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TodoItemTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +53,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TodoItemTest.isOverdue">
-    <configuration name="PersonTest.setEmailWithNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TodoItemTaskTest.setTodoItem">
+    <configuration name="TodoItemTaskTest.isAssigned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
@@ -63,14 +63,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PersonTest" />
-      <option name="METHOD_NAME" value="setEmailWithNullValue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TodoItemTaskTest" />
+      <option name="METHOD_NAME" value="isAssigned" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.setLastNameWithNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoItemTaskTest.setTodoItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +79,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PersonTest" />
-      <option name="METHOD_NAME" value="setLastNameWithNullValue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TodoItemTaskTest" />
+      <option name="METHOD_NAME" value="setTodoItem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TodoItemTaskTest.setTodoItem" />
+        <item itemvalue="JUnit.TodoItemTaskTest.isAssigned" />
         <item itemvalue="JUnit.TodoItemTest.isOverdue" />
         <item itemvalue="JUnit.TodoItemTest.setDeadLine" />
         <item itemvalue="JUnit.TodoItemTest.setTitle" />
-        <item itemvalue="JUnit.PersonTest.setEmailWithNullValue" />
-        <item itemvalue="JUnit.PersonTest.setLastNameWithNullValue" />
       </list>
     </recent_temporary>
   </component>
@@ -156,18 +156,10 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/TodoItemTest.java</url>
-          <line>31</line>
-          <properties class="org.example.TodoItemTest" method="isOverdue">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.example.TodoItem" memberName="done" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
