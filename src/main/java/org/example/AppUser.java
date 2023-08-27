@@ -18,6 +18,18 @@ public class AppUser {
                 '}';
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        if(password==null|| password.isEmpty())
+        {
+            throw new IllegalArgumentException("password cannot be null");
+        }
+        this.password = password;
+    }
+
     private String password;
     private AppRole role;
 
@@ -41,6 +53,10 @@ public class AppUser {
     }
 
     public void setUsername(String username) {
+        if(username==null|| username.isEmpty())
+        {
+            throw new IllegalArgumentException("username cannot be null");
+        }
         this.username = username;
     }
 
@@ -49,6 +65,11 @@ public class AppUser {
     }
 
     public void setRole(AppRole role) {
+        if(role==null)
+        {
+            throw new IllegalArgumentException("role cannot be null");
+        }
+
         this.role = role;
     }
 
