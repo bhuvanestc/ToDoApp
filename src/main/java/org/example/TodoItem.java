@@ -1,12 +1,27 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class TodoItem {
     private int id;
     public String title;
     public String taskDescription;
     public LocalDate deadLine;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TodoItem todoItem = (TodoItem) o;
+        return id == todoItem.id && Objects.equals(title, todoItem.title) && Objects.equals(taskDescription, todoItem.taskDescription) && Objects.equals(deadLine, todoItem.deadLine) && Objects.equals(done, todoItem.done) && Objects.equals(creator, todoItem.creator);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, taskDescription, deadLine, done, creator);
+    }
+
     public Boolean done;
     public Person creator;
 
@@ -71,10 +86,7 @@ public class TodoItem {
         return LocalDate.now().isAfter(this.deadLine);
     }
 
-    public String getSummary()
-    {
-        return this.toString();
-    }
+
 
     @Override
     public String toString() {
