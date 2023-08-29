@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 import java.util.Objects;
 
@@ -8,15 +8,46 @@ public class AppUser {
         this.role = role;
     }
 
+    public AppUser getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(AppUser credentials) {
+        this.credentials = credentials;
+    }
+
+
+
     private String username;
+    private AppUser credentials;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AppUser appUser = (AppUser) o;
+        return Objects.equals(username, appUser.username) && Objects.equals(password, appUser.password) && role == appUser.role;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, password, role);
+    }
+
+    private String password;
+    private AppRole role;
 
     @Override
     public String toString() {
         return "AppUser{" +
                 "username='" + username + '\'' +
+                ", password='" + password + '\'' +
                 ", role=" + role +
                 '}';
     }
+
+
+
 
     public String getPassword() {
         return password;
@@ -28,23 +59,6 @@ public class AppUser {
             throw new IllegalArgumentException("password cannot be null");
         }
         this.password = password;
-    }
-
-    private String password;
-    private AppRole role;
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        AppUser appUser = (AppUser) o;
-        return Objects.equals(username, appUser.username) && role == appUser.role;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(username, role);
     }
 
 

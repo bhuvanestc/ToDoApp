@@ -1,10 +1,20 @@
-package org.example;
+package org.example.model;
 
 import java.util.Objects;
 
 public class TodoItemTask {
     private int id;
     private Boolean assigned;
+
+    @Override
+    public String toString() {
+        return "TodoItemTask{" +
+                "id=" + id +
+                ", assigned=" + assigned +
+                ", todoItem=" + todoItem +
+                '}';
+    }
+
     private TodoItem todoItem;
 
     @Override
@@ -12,15 +22,19 @@ public class TodoItemTask {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TodoItemTask that = (TodoItemTask) o;
-        return id == that.id && Objects.equals(assigned, that.assigned) && Objects.equals(todoItem, that.todoItem) && Objects.equals(assignee, that.assignee);
+        return id == that.id && Objects.equals(assigned, that.assigned) && Objects.equals(todoItem, that.todoItem);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, assigned, todoItem, assignee);
+        return Objects.hash(id, assigned, todoItem);
     }
 
     private Person assignee;
+
+
+
+
 
     public TodoItemTask(int id, Boolean assigned, TodoItem todoItem, Person assignee) {
         this.id = id;
@@ -62,15 +76,7 @@ public class TodoItemTask {
 
 
 
-    @Override
-    public String toString() {
-        return "TodoItemTask{" +
-                "id=" + id +
-                ", assigned=" + assigned +
-                ", todoItem=" + todoItem +
-                ", assignee=" + assignee +
-                '}';
-    }
+
 
 
 
