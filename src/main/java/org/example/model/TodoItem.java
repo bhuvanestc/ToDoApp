@@ -4,25 +4,30 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class TodoItem {
+    private int id;
+    public String title;
+    public String taskDescription;
+    public LocalDate deadLine;
+    public Boolean done;
+    public Person creator;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TodoItem todoItem = (TodoItem) o;
-        return id == todoItem.id && Objects.equals(title, todoItem.title) && Objects.equals(taskDescription, todoItem.taskDescription) && Objects.equals(deadLine, todoItem.deadLine) && Objects.equals(done, todoItem.done);
+        return id == todoItem.id && Objects.equals(title, todoItem.title)
+                && Objects.equals(taskDescription, todoItem.taskDescription) && Objects.equals(deadLine, todoItem.deadLine) && Objects.equals(done, todoItem.done);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, title, taskDescription, deadLine, done);
     }
-    private int id;
-    public String title;
-    public String taskDescription;
-    public LocalDate deadLine;
 
-    public TodoItem(int id, String title, String taskDescription, LocalDate deadLine, Boolean done, Person creator) {
+
+    public TodoItem(int id, String title, String taskDescription,
+                    LocalDate deadLine, Boolean done, Person creator) {
         this.id = id;
         this.title = title;
         this.taskDescription = taskDescription;
@@ -30,9 +35,6 @@ public class TodoItem {
         this.done = done;
         this.creator = creator;
     }
-
-    public Boolean done;
-    public Person creator;
     @Override
     public String toString() {
         return "TodoItem{" +
@@ -43,13 +45,6 @@ public class TodoItem {
                 ", done=" + done +
                 '}';
     }
-
-
-
-
-
-
-
 
     public int getId() {
         return id;

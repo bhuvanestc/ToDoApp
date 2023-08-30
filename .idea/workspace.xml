@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18697f71-53f6-4301-abd8-eeb39da29cea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/TodoItemDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/TodoItemTaskDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TodoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TodoItemTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TodoItemTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TodoItemTaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TodoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TodoItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/dao/AppUserDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/AppUserDAOCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAOCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/PersonidSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/PersonidSequencer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemTaskidSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemTaskidSequencer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemidSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemidSequencer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +24,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +65,7 @@
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,7 +81,7 @@
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,7 +97,7 @@
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,7 +113,7 @@
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,7 +129,7 @@
       <module name="ToDo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,12 +167,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/TodoItemTest.java</url>
-          <line>33</line>
+          <line>35</line>
           <properties class="org.example.TodoItemTest" method="isOverdue">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/model/Person.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
