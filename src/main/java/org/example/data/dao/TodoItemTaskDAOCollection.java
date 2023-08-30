@@ -14,7 +14,7 @@ public class TodoItemTaskDAOCollection implements TodoItemTaskDAO{
     @Override
     public TodoItemTask persist(TodoItemTask todoItemTask) {
         Person p2=new Person(2,"guru","Chand","chand@gmail.com");
-        TodoItem T1 = new TodoItem(1,"Gardening","Planting trees", LocalDate.of(2023,8,31),false,p1) ;
+        TodoItem T1 = new TodoItem(1,"Gardening","Planting trees", LocalDate.of(2023,8,31),false,p2) ;
         TodoItemTask t1 = new TodoItemTask(1,true,T1,p2);
         this.todoItemTask.add(t1);
         return t1;

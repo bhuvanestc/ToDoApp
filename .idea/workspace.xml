@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18697f71-53f6-4301-abd8-eeb39da29cea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/dao/AppUserDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/AppUserDAOCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/dao/PersonDAOCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/PersonidSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/PersonidSequencer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemTaskidSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemTaskidSequencer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemidSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/sequencer/TodoItemidSequencer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
